@@ -68,6 +68,22 @@ header{
     color: #121212;
 }
 
+.header__menu-item li a{
+    display: block;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: 600;
+    color: #f2f2f2;
+    background-color: rgb(212, 203, 203);
+}
+.header__menu-item li a:hover{
+    background-color: #434343;
+}
+
+.header__menu li ul{
+    display: none;
+}
+
 .cta{
     margin-left: 3rem;
     padding: 10px 24px;
@@ -278,8 +294,13 @@ footer{
     margin-top: 1em;
     margin-bottom: 1em;
     display: grid;
-   
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 50px;
     gap: 1em;
+}
+
+ul,ol{
+    list-style: none;
 }
 
 .grid-header div{
